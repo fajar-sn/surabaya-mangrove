@@ -60,7 +60,7 @@ export default {
       let currentMarket = L.marker([currentMangrove.latitude, currentMangrove.longitude], {icon: icon})
 
       currentMarket.addTo(map)
-      currentMarket.bindPopup('Terdapat ' + currentMangrove.mangrove_count + ' mangrove pada titik ini.')
+      currentMarket.bindPopup('Longitude : ' + currentMangrove.longitude + '<br>' + 'Latitude : ' + currentMangrove.latitude + '<br>' + 'Terdapat ' + currentMangrove.mangrove_count + ' mangrove pada titik ini.')
 
     }
 
